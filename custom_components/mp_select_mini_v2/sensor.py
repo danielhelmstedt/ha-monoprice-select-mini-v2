@@ -1,7 +1,7 @@
 import aiohttp
 import logging
 from homeassistant.components.sensor import SensorEntity
-from homeassistant.const import CONF_HOST, TEMP_CELSIUS
+from homeassistant.const import CONF_HOST, UnitOfTemperature
 from homeassistant.helpers.event import async_track_time_interval
 from .const import DOMAIN, SCAN_INTERVAL
 
@@ -58,7 +58,7 @@ class MPSelectMiniV2Sensor(SensorEntity):
     @property
     def native_unit_of_measurement(self):
         if self._device_class == "temperature":
-            return TEMP_CELSIUS
+            return UnitOfTemperature.CELSIUS
     
     @property
     def options(self):

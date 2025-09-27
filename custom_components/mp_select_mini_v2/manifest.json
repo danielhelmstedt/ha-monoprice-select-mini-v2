@@ -1,10 +1,10 @@
 {
     "domain": "mp_select_mini_v2",
     "name": "Monoprice Select Mini V2",
-    "version": "1.0.1",
-    "documentation": "https://github.com/danielhelmstedt/mp_select_mini_v2",
+    "version": "1.0.0",
+    "documentation": "https://github.com/nd0905/Monoprice_Select_Mini_V2-HASS",
     "dependencies": [],
-    "codeowners": ["@danielhelmstedt"],
+    "codeowners": ["@nd0905"],
     "requirements": [],
     "config_flow": true,
     "iot_class": "local_polling",

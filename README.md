@@ -1,5 +1,10 @@
 # Monoprice Select Mini V2 - Home Assistant Integration
 
+[![GitHub Release][releases-shield]][releases]
+[![License][license-shield]](LICENSE)
+
+[![hacs](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://hacs.xyz/docs/faq/custom_repositories)
+
 This repository contains the configuration and scripts to integrate the Monoprice Select Mini V2 3D printer with Home Assistant.
 
 ## Features
@@ -14,9 +19,11 @@ This repository contains the configuration and scripts to integrate the Monopric
 
 ## Installation
 
-1. Add this repository to HACS as a custom repository.
-2. Install the integration via HACS.
-3. Restart Home Assistant to apply the changes.
+1. Add this repository as a custom repository to HACS: [![Add Repository](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=nd0905&repository=Monoprice_Select_Mini_V2-HASS&category=integration)
+2. Use HACS to install the integration.
+3. Restart Home Assistant.
+4. Set up the integration using the UI: [![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=mp_select_mini_v2)
+
 
 ## Configuration
 

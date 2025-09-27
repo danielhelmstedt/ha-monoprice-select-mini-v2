@@ -1,7 +1,7 @@
 # Monoprice Select Mini V2 - Home Assistant Integration
 
 [![GitHub Release][releases-shield]][releases]
-[![License][license-shield]](LICENSE)
+[![License][license-shield]](LICENSE.md)
 
 [![hacs](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://hacs.xyz/docs/faq/custom_repositories)
 

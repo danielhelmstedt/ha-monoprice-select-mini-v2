@@ -1,7 +1,8 @@
-import requests
 from homeassistant.components.number import NumberEntity
-from homeassistant.const import CONF_HOST, TEMP_CELSIUS
+from homeassistant.const import CONF_HOST, UnitOfTemperature
+
 from .const import DOMAIN
+
 
 async def async_setup_entry(hass, entry, async_add_entities):
     host = entry.data[CONF_HOST]
@@ -18,7 +19,7 @@ class MPSelectMiniV2Number(NumberEntity):
         self._attr_native_min_value = native_min_value
         self._attr_native_max_value = native_max_value
         self._value = initial_value
-        self._native_unit_of_measurement = TEMP_CELSIUS
+        self._native_unit_of_measurement = UnitOfTemperature.CELSIUS
         self._icon = "mdi:target"
         self._mode = "box"
         self._step = 1

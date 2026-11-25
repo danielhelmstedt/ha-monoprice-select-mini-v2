@@ -1,7 +1,9 @@
-import voluptuous as vol
+import probatio
 from homeassistant import config_entries
 from homeassistant.const import CONF_HOST, CONF_NAME
+
 from .const import DOMAIN
+
 
 class MPSelectMiniV2ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     VERSION = 1
@@ -23,9 +25,9 @@ class MPSelectMiniV2ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 },
             )
 
-        data_schema = vol.Schema({
-            vol.Required(CONF_HOST): str,
-            vol.Required(CONF_NAME): str,
+        data_schema = probatio.Schema({
+            probatio.Required(CONF_HOST): str,
+            probatio.Required(CONF_NAME): str,
         })
 
         return self.async_show_form(

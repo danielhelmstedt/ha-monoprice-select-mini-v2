@@ -1,7 +1,9 @@
 import logging
+
 import requests
 from homeassistant.components.button import ButtonEntity
 from homeassistant.const import CONF_HOST
+
 from .const import DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
